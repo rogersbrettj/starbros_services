@@ -11,7 +11,7 @@ export const siteConfig = {
   businessHours: "Monday–Friday: 9:00 AM–5:00 PM",
   serviceAreaMapEmbedUrl:
     "https://www.google.com/maps?q=Peachtree+City,+GA&z=10&output=embed",
-  formEndpoint: process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ?? "",
+  formspreeFormId: "meewnkol",
   socialLinks: {
     facebook: "",
     instagram: "",
