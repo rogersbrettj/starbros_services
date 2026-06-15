@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-body: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #ffffff;
+}
+
+body {
+  background: #fff;
+  color: #111827;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #b8e7ff;
+  color: #000000;
+}
+
+a,
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid #2299dd;
+  outline-offset: 3px;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-brand-500 px-6 py-3.5 text-center text-sm font-extrabold text-white shadow-lg shadow-brand-500/20 transition duration-200 hover:-translate-y-0.5 hover:bg-brand-600 focus:outline-none focus:ring-4 focus:ring-brand-200;
+  }
+
+  .btn-secondary {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full border-2 border-black bg-white px-6 py-3 text-center text-sm font-extrabold text-black transition duration-200 hover:-translate-y-0.5 hover:bg-black hover:text-white focus:outline-none focus:ring-4 focus:ring-slate-200;
+  }
+
+  .btn-dark {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-black px-6 py-3.5 text-center text-sm font-extrabold text-white transition duration-200 hover:-translate-y-0.5 hover:bg-slate-800 focus:outline-none focus:ring-4 focus:ring-slate-300;
+  }
+
+  .btn-light {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-center text-sm font-extrabold text-black transition duration-200 hover:-translate-y-0.5 hover:bg-slate-100 focus:outline-none focus:ring-4 focus:ring-white/30;
+  }
+
+  .btn-outline-light {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full border-2 border-white px-6 py-3 text-center text-sm font-extrabold text-white transition duration-200 hover:bg-white hover:text-black focus:outline-none focus:ring-4 focus:ring-white/30;
+  }
+
+  .eyebrow {
+    @apply text-xs font-black uppercase tracking-[0.2em] text-brand-700;
+  }
+
+  .section-title {
+    @apply text-3xl font-black tracking-[-0.04em] text-black sm:text-5xl;
+  }
+
+  .section-copy {
+    @apply text-base leading-7 text-slate-600 sm:text-lg sm:leading-8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
