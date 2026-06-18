@@ -7,6 +7,7 @@ export function TeamMemberCard({
     name: string;
     role: string;
     image: string;
+    imageAlt: string;
     imagePosition: string;
     school: string;
     bio: string;
@@ -17,11 +18,11 @@ export function TeamMemberCard({
       <div className="relative mx-auto aspect-[3/4] w-full max-w-[280px] overflow-hidden rounded-xl bg-slate-100">
         <Image
           src={member.image}
-          alt={`${member.name} of StarBro's Services`}
+          alt={member.imageAlt}
           fill
           className="object-cover"
           style={{ objectPosition: member.imagePosition }}
-          sizes="(max-width: 640px) 44vw, (max-width: 1024px) 38vw, 280px"
+          sizes="(max-width: 767px) 100vw, (max-width: 1024px) 30vw, 280px"
         />
       </div>
       <div className="mt-4">

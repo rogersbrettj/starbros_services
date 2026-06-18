@@ -41,9 +41,16 @@ The supplied images live in:
 public/images/
   brand/
     starbros-logo-main.png
+    starbros-logo-header.jpg
     starbros-logo-wide.png
     starbros-logo-square.png
     starbros-favicon.png
+    starbros-favicon-16.png
+    starbros-favicon-32.png
+    starbros-favicon-48.png
+    starbros-apple-touch-icon.png
+    starbros-icon-192.png
+    starbros-icon-512.png
   team/
     brett-headshot.png
     kaden-headshot.png
@@ -91,6 +98,28 @@ form provider's spam controls, validate all fields server-side, apply rate
 limiting to a custom API route, and consider Turnstile or reCAPTCHA if spam
 becomes a problem.
 
+## Google Reviews
+
+The reviews page keeps existing verified-review placeholders visible by default.
+It also includes a server-side Google Places integration that can load official
+Google reviews after credentials are added to the hosting environment:
+
+```bash
+GOOGLE_PLACES_API_KEY=
+GOOGLE_PLACE_ID=
+GOOGLE_REVIEW_URL=
+```
+
+- `GOOGLE_PLACES_API_KEY` is a server-side secret and should not be exposed in
+  client code.
+- `GOOGLE_PLACE_ID` identifies the StarBro's Services Google place listing.
+- `GOOGLE_REVIEW_URL` is optional and powers the "Review us on Google" button.
+
+Google Places review data is limited to the reviews returned by the Place
+Details API. For full owner-managed Google Business Profile review access, use
+the official Google Business Profile Reviews API with verified business access
+and OAuth credentials. Do not scrape Google reviews or publish invented reviews.
+
 ## Update Business Details
 
 Most editable business content is centralized in `config/site.ts`:
@@ -115,7 +144,8 @@ hidden while those values are empty.
 ## Update Website Content
 
 - **Reviews:** Replace the labeled placeholder cards in
-  `app/reviews/page.tsx` only with verified feedback and customer permission.
+  `app/reviews/page.tsx` only with verified feedback and customer permission,
+  or configure the Google reviews environment variables above.
 - **Gallery:** Update `galleryItems` in `config/site.ts`.
 - **Map:** Update `serviceAreaMapEmbedUrl` in `config/site.ts` to change the
   general service-region map. Do not publish a fake street address.

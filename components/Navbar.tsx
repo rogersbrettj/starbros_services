@@ -19,7 +19,7 @@ export function Navbar() {
     <>
       <PromoBanner />
       <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-xl">
-        <div className="mx-auto flex h-[76px] max-w-7xl items-center justify-between gap-6 px-5 lg:h-[84px] lg:px-8">
+        <div className="mx-auto flex h-[76px] max-w-7xl items-center justify-between gap-3 px-4 sm:gap-5 sm:px-5 lg:h-[84px] lg:gap-6 lg:px-8">
           <Logo />
           <nav
             className="hidden items-center gap-5 xl:flex"

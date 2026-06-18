@@ -13,9 +13,16 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: "#2299dd",
     icons: [
       {
-        src: "/images/brand/starbros-favicon.png",
-        sizes: "1254x1254",
+        src: "/images/brand/starbros-icon-192.png",
+        sizes: "192x192",
         type: "image/png",
+        purpose: "any",
+      },
+      {
+        src: "/images/brand/starbros-icon-512.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "any",
       },
     ],
   };

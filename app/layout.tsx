@@ -26,9 +26,31 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/" },
   icons: {
-    icon: "/images/brand/starbros-favicon.png",
-    shortcut: "/images/brand/starbros-favicon.png",
-    apple: "/images/brand/starbros-favicon.png",
+    icon: [
+      {
+        url: "/images/brand/starbros-favicon-16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        url: "/images/brand/starbros-favicon-32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        url: "/images/brand/starbros-favicon-48.png",
+        sizes: "48x48",
+        type: "image/png",
+      },
+    ],
+    shortcut: "/images/brand/starbros-favicon-32.png",
+    apple: [
+      {
+        url: "/images/brand/starbros-apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
   },
   openGraph: {
     title: `${siteConfig.name} | Local Concrete Pressure Washing`,
@@ -65,8 +87,8 @@ const localBusinessSchema = {
     "College-student-operated concrete pressure washing business serving Peachtree City and surrounding Georgia communities.",
   telephone: siteConfig.phoneE164,
   url: siteConfig.url,
-  image: `${siteConfig.url}/images/brand/starbros-logo-main.png`,
-  logo: `${siteConfig.url}/images/brand/starbros-logo-main.png`,
+  image: `${siteConfig.url}/images/brand/starbros-logo-header.jpg`,
+  logo: `${siteConfig.url}/images/brand/starbros-logo-header.jpg`,
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",

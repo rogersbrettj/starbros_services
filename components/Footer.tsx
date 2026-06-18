@@ -14,8 +14,8 @@ export function Footer() {
         <div className="sm:col-span-2 lg:col-span-1">
           <Logo footer />
           <p className="mt-5 max-w-xs text-sm leading-6 text-slate-300">
-            Professional concrete pressure washing from two local college
-            students who grew up in the Peachtree City community.
+            Professional concrete pressure washing from local founders with
+            roots in the Peachtree City community.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <a

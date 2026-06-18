@@ -66,11 +66,12 @@ export default function HomePage() {
               Professional Results. Local Students You Can Support.
             </h2>
             <p className="section-copy mt-5">
-              StarBro&apos;s Services was built by local students who grew up
-              in the Peachtree City area and now attend college while building
-              a business of their own. We combine professional equipment with
-              personal service, clear communication, and honest pricing. Every
-              job matters because our reputation is personal.
+              StarBro&apos;s Services was built by local founders with roots in
+              the Peachtree City area who are pursuing their education and
+              long-term careers while building a business of their own. We
+              combine professional equipment with personal service, clear
+              communication, and honest pricing. Every job matters because our
+              reputation is personal.
             </p>
           </div>
           <div className="mt-11 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -100,9 +101,9 @@ export default function HomePage() {
           <div className="mt-10 rounded-[1.75rem] bg-black px-6 py-7 text-center text-white sm:px-10">
             <p className="mx-auto max-w-4xl text-base font-semibold leading-7 text-slate-200 sm:text-lg">
               When you hire StarBro&apos;s Services, you are not paying for a
-              large company&apos;s overhead. You are supporting local college
-              students who care about doing excellent work, communicating
-              clearly, and earning your recommendation.
+              large company&apos;s overhead. You are supporting local founders who
+              care about doing excellent work, communicating clearly, and
+              earning your recommendation.
             </p>
           </div>
         </div>
@@ -160,7 +161,7 @@ export default function HomePage() {
               consistent concrete cleaning results.
             </p>
             <Link href="/about" className="btn-primary mt-8">
-              Meet Brett and Kaden <ArrowIcon />
+              Meet Brett, Kaden, and Collin <ArrowIcon />
             </Link>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">

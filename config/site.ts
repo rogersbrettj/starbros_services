@@ -29,7 +29,7 @@ export const siteConfig = {
     { label: "Services", href: "/services" },
     { label: "Gallery", href: "/gallery" },
     { label: "About", href: "/about" },
-    { label: "Reviews", href: "/reviews" },
+    // Reviews is intentionally hidden from public navigation for now; the route and integration remain intact.
     { label: "FAQ", href: "/faq" },
     { label: "Contact", href: "/contact" },
   ],
@@ -77,7 +77,7 @@ export const differentiators = [
   {
     title: "Local and Personal",
     description:
-      "Work directly with local college students who grew up in the Peachtree City community.",
+      "Work directly with local founders who have roots in the Peachtree City community.",
     icon: "local",
   },
   {
@@ -101,7 +101,7 @@ export const differentiators = [
 ] as const;
 
 export const whyChooseUs = [
-  "Local college-student-operated business",
+  "Local student-founded business",
   "More than 3 years of hands-on experience",
   "Professional-grade equipment",
   "Free quotes",
@@ -146,6 +146,15 @@ export const galleryItems = [
       "A stone-edged concrete path with dirt and organic buildup cleared away.",
     position: "center",
   },
+  {
+    title: "Large Driveway Refresh",
+    category: "Before & After",
+    src: "/images/gallery/large-driveway-before-after.jpg",
+    alt: "Before and after pressure washing project by StarBro's Services",
+    description:
+      "A large residential driveway restored to a cleaner, brighter finish with professional pressure washing.",
+    position: "center",
+  },
 ] as const;
 
 export const teamMembers = [
@@ -153,6 +162,7 @@ export const teamMembers = [
     name: "Brett",
     role: "Manager",
     image: "/images/team/brett-headshot.png",
+    imageAlt: "Brett, manager of StarBro's Services",
     imagePosition: "center 20%",
     school: "Finance student at Auburn University",
     bio:
@@ -162,10 +172,21 @@ export const teamMembers = [
     name: "Kaden",
     role: "Pressure Washing Specialist",
     image: "/images/team/kaden-headshot.png",
+    imageAlt: "Kaden, pressure washing specialist at StarBro's Services",
     imagePosition: "center 15%",
     school: "Student at the University of Georgia",
     bio:
       "Kaden is from Peachtree City and currently attends the University of Georgia, where he is pursuing a path related to commercial real estate. He brings more than 3 years of hands-on pressure washing experience to StarBro's Services and handles the cleaning work using professional-grade equipment. Outside of work and school, Kaden enjoys pickleball and is interested in finding solutions that improve housing affordability in America.",
+  },
+  {
+    name: "Collin",
+    role: "Founder of StarBro's Services",
+    image: "/images/team/collin-headshot.jpg",
+    imageAlt: "Collin, founder of StarBro's Services",
+    imagePosition: "center 18%",
+    school: "Recent graduate of the University of Georgia",
+    bio:
+      "Collin is a founder of StarBro's Services from Peachtree City, Georgia. A recent graduate of the University of Georgia, he brings drive, discipline, and a strong work ethic to the team. Outside of StarBro's, he is working toward earning his pilot's license as part of his long-term dream of becoming a commercial pilot.",
   },
 ] as const;
 

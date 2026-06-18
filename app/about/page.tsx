@@ -9,7 +9,7 @@ import { teamMembers } from "@/config/site";
 export const metadata: Metadata = {
   title: "Meet the Team",
   description:
-    "Meet Brett and Kaden, the local Peachtree City college students behind StarBro's Services concrete pressure washing.",
+    "Meet Brett, Kaden, and Collin, the local Peachtree City team behind StarBro's Services concrete pressure washing.",
   alternates: { canonical: "/about" },
 };
 
@@ -19,12 +19,12 @@ export default function AboutPage() {
       <PageHero
         eyebrow="Local students building a local business"
         title="Meet the Team"
-        description="StarBro's Services was started by two local students who grew up in the Peachtree City area and attended Starr's Mill High School. Today, Brett and Kaden are pursuing their college education while building a business focused on hard work, honest pricing, clear communication, and professional results for local homeowners."
+        description="StarBro's Services brings together three local founders with roots in Peachtree City. Brett, Kaden, and Collin are building a business focused on hard work, honest pricing, clear communication, and professional results for local homeowners while pursuing their education and long-term careers."
       />
 
       <section className="px-3 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
-        <div className="mx-auto max-w-5xl">
-          <div className="grid grid-cols-2 gap-3 sm:gap-5 lg:gap-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-3 lg:gap-8">
             {teamMembers.map((member) => (
               <TeamMemberCard key={member.name} member={member} />
             ))}
