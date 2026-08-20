@@ -8,7 +8,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Get Your Free Concrete Pressure Washing Quote",
   description:
-    "Request a free StarBro's Services concrete pressure washing quote in Peachtree City, Sharpsburg, Senoia, Fayetteville, Brooks, or Tyrone.",
+    "Request a free StarBro's Services concrete pressure washing quote in Athens, Oconee County, Watkinsville, or surrounding Georgia communities.",
   alternates: { canonical: "/contact" },
 };
 
@@ -96,14 +96,15 @@ export default function ContactPage() {
             <h2 className="section-title mt-4">Our Service Area</h2>
             <p className="section-copy mx-auto mt-5 max-w-3xl">
               StarBro&apos;s Services provides concrete pressure washing
-              throughout Peachtree City and surrounding communities. Contact us
-              to confirm service availability for your property.
+              throughout Athens, Oconee County, Watkinsville, and surrounding
+              Georgia communities. Contact us to confirm service availability
+              for your property.
             </p>
           </div>
           <div className="mt-10 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
             <iframe
               src={siteConfig.serviceAreaMapEmbedUrl}
-              title="StarBro's Services service area map"
+              title="StarBro's Services Athens-area service map"
               className="h-[320px] w-full sm:h-[420px]"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -114,8 +115,8 @@ export default function ContactPage() {
             <ServiceAreaBadges />
           </div>
           <p className="mx-auto mt-6 max-w-3xl text-center text-sm leading-6 text-slate-600">
-            Serving Peachtree City, Sharpsburg, Senoia, Fayetteville, Brooks,
-            and Tyrone. Contact us to confirm availability for your address.
+            Serving Athens, Oconee County, Watkinsville, and surrounding Georgia
+            communities. Contact us to confirm availability for your address.
           </p>
           <p className="mx-auto mt-2 max-w-3xl text-center text-xs leading-5 text-slate-500">
             The map provides a general view of the service region and does not

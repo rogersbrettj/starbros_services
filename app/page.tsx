@@ -24,9 +24,9 @@ import {
 } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Concrete Pressure Washing in Peachtree City, GA",
+  title: "Concrete Pressure Washing in Athens, GA",
   description:
-    "Support local college students with professional driveway, sidewalk, patio, and walkway pressure washing in Peachtree City and nearby Georgia communities.",
+    "Support local college students with professional driveway, sidewalk, patio, and walkway pressure washing in Athens and nearby Georgia communities.",
   alternates: { canonical: "/" },
 };
 
@@ -66,12 +66,11 @@ export default function HomePage() {
               Professional Results. Local Students You Can Support.
             </h2>
             <p className="section-copy mt-5">
-              StarBro&apos;s Services was built by local founders with roots in
-              the Peachtree City area who are pursuing their education and
-              long-term careers while building a business of their own. We
-              combine professional equipment with personal service, clear
-              communication, and honest pricing. Every job matters because our
-              reputation is personal.
+              StarBro&apos;s Services is operated by local college students serving
+              the Athens area while pursuing their education and long-term
+              careers. We combine professional equipment with personal service,
+              clear communication, and honest pricing. Every job matters because
+              our reputation is personal.
             </p>
           </div>
           <div className="mt-11 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -101,9 +100,9 @@ export default function HomePage() {
           <div className="mt-10 rounded-[1.75rem] bg-black px-6 py-7 text-center text-white sm:px-10">
             <p className="mx-auto max-w-4xl text-base font-semibold leading-7 text-slate-200 sm:text-lg">
               When you hire StarBro&apos;s Services, you are not paying for a
-              large company&apos;s overhead. You are supporting local founders who
-              care about doing excellent work, communicating clearly, and
-              earning your recommendation.
+              large company&apos;s overhead. You are supporting local college
+              students who care about doing excellent work, communicating
+              clearly, and earning your recommendation.
             </p>
           </div>
         </div>
@@ -113,7 +112,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl text-center">
           <span className="eyebrow">Proudly serving our local communities</span>
           <h2 className="mt-3 text-2xl font-black tracking-tight text-black sm:text-3xl">
-            Concrete pressure washing near Peachtree City
+            Concrete pressure washing near Athens
           </h2>
           <div className="mt-7">
             <ServiceAreaBadges />
@@ -161,7 +160,7 @@ export default function HomePage() {
               consistent concrete cleaning results.
             </p>
             <Link href="/about" className="btn-primary mt-8">
-              Meet Brett, Kaden, and Collin <ArrowIcon />
+              Meet the StarBro&apos;s Team <ArrowIcon />
             </Link>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">

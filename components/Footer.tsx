@@ -14,8 +14,8 @@ export function Footer() {
         <div className="sm:col-span-2 lg:col-span-1">
           <Logo footer />
           <p className="mt-5 max-w-xs text-sm leading-6 text-slate-300">
-            Professional concrete pressure washing from local founders with
-            roots in the Peachtree City community.
+            Professional concrete pressure washing from local college students
+            serving the Athens community.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <a
@@ -75,7 +75,8 @@ export function Footer() {
             {siteConfig.serviceAreas.join(" · ")}
           </p>
           <p className="mt-5 text-xs leading-5 text-slate-400">
-            Serving Peachtree City and surrounding Georgia communities.
+            Serving Athens, Oconee County, Watkinsville, and surrounding Georgia
+            communities.
           </p>
         </div>
       </div>

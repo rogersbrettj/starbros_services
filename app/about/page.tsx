@@ -9,7 +9,7 @@ import { teamMembers } from "@/config/site";
 export const metadata: Metadata = {
   title: "Meet the Team",
   description:
-    "Meet Brett, Kaden, and Collin, the local Peachtree City team behind StarBro's Services concrete pressure washing.",
+    "Meet the local college-student team providing StarBro's Services concrete pressure washing throughout the Athens area.",
   alternates: { canonical: "/about" },
 };
 
@@ -19,7 +19,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="Local students building a local business"
         title="Meet the Team"
-        description="StarBro's Services brings together three local founders with roots in Peachtree City. Brett, Kaden, and Collin are building a business focused on hard work, honest pricing, clear communication, and professional results for local homeowners while pursuing their education and long-term careers."
+        description="StarBro's Services brings together local college students serving Athens-area homeowners. The team is building a business focused on hard work, honest pricing, clear communication, and professional results while pursuing their education and long-term careers."
       />
 
       <section className="px-3 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
@@ -45,14 +45,14 @@ export default function AboutPage() {
           <div>
             <p className="text-lg leading-8 text-slate-300">
               We wanted to build a business that rewards hard work and provides
-              a straightforward service for homeowners in the communities
-              where we grew up. Our goal is simple: communicate clearly, price
-              honestly, show up ready to work, and leave each customer with
-              cleaner concrete and a better-looking property.
+              a straightforward service for homeowners in the Athens community.
+              Our goal is simple: communicate clearly, price honestly, show up
+              ready to work, and leave each customer with cleaner concrete and a
+              better-looking property.
             </p>
             <div className="mt-7 grid gap-3 sm:grid-cols-2">
               {[
-                "Peachtree City roots",
+                "Serving the Athens community",
                 "Starr's Mill High School alumni",
                 "Clear, friendly communication",
                 "Concrete-focused service",

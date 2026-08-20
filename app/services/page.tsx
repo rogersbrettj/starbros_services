@@ -9,7 +9,7 @@ import { services, siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Concrete Pressure Washing Services",
   description:
-    "Driveway, sidewalk, patio, walkway, and other concrete pressure washing services in Peachtree City and surrounding Georgia communities.",
+    "Driveway, sidewalk, patio, walkway, and other concrete pressure washing services in Athens and surrounding Georgia communities.",
   alternates: { canonical: "/services" },
 };
 
@@ -24,7 +24,7 @@ const serviceSchema = {
     telephone: siteConfig.phoneE164,
   },
   areaServed: siteConfig.serviceAreas.map((name) => ({
-    "@type": "City",
+    "@type": "Place",
     name: `${name}, Georgia`,
   })),
   serviceType: services.map((service) => service.title),
@@ -37,7 +37,7 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="Concrete cleaning specialists"
-        title="Concrete Pressure Washing Services in Peachtree City and Surrounding Areas"
+        title="Concrete Pressure Washing Services in Athens and Surrounding Areas"
         description="StarBro's Services focuses exclusively on concrete, helping local homeowners refresh driveways, sidewalks, patios, walkways, and other concrete surfaces."
       />
 

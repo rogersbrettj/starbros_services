@@ -23,14 +23,16 @@ export default function GalleryPage() {
       <section className="px-5 py-16 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-wrap justify-center gap-2">
-            {galleryItems.map((item) => (
-              <span
-                key={item.category}
-                className="rounded-full border border-brand-100 bg-brand-50 px-4 py-2 text-sm font-extrabold text-brand-800"
-              >
-                {item.category}
-              </span>
-            ))}
+            {Array.from(new Set(galleryItems.map((item) => item.category))).map(
+              (category) => (
+                <span
+                  key={category}
+                  className="rounded-full border border-brand-100 bg-brand-50 px-4 py-2 text-sm font-extrabold text-brand-800"
+                >
+                  {category}
+                </span>
+              ),
+            )}
           </div>
           <div className="mt-10">
             <GalleryGrid />

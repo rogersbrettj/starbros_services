@@ -22,9 +22,10 @@ export function HeroSection() {
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
             StarBro&apos;s Services provides professional concrete pressure
             washing for driveways, sidewalks, patios, and walkways across
-            Peachtree City and surrounding communities. Get honest pricing,
-            friendly local service, and professional results without the
-            overhead of a large commercial company.
+            Athens, Oconee County, Watkinsville, and surrounding Georgia
+            communities. Get honest pricing, friendly local service, and
+            professional results without the overhead of a large commercial
+            company.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="/contact" className="btn-primary">
@@ -53,8 +54,8 @@ export function HeroSection() {
         <div className="relative">
           <div className="absolute -inset-4 rotate-2 rounded-[2.2rem] bg-brand-100" />
           <BeforeAfterCard
-            src="/images/gallery/driveway-before-after.jpg"
-            alt="Driveway before and after StarBro's Services concrete pressure washing"
+            src="/images/gallery/brick-porch-before-after.jpg"
+            alt="Brick porch and steps before and after StarBro's Services pressure washing"
             className="relative"
             priority
           />

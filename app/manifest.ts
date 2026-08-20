@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: siteConfig.name,
     short_name: siteConfig.name,
     description:
-      "Local college-student-operated concrete pressure washing in Peachtree City, Georgia.",
+      "Local college-student-operated concrete pressure washing in Athens, Georgia.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

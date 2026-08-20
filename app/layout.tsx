@@ -8,21 +8,20 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Concrete Pressure Washing in Peachtree City, GA`,
+    default: `${siteConfig.name} | Concrete Pressure Washing in Athens, GA`,
     template: `%s | ${siteConfig.name}`,
   },
   description:
-    "Support local college students with professional concrete pressure washing for driveways, sidewalks, patios, and walkways in Peachtree City and nearby Georgia communities.",
+    "Support local college students with professional concrete pressure washing for driveways, sidewalks, patios, and walkways in Athens and nearby Georgia communities.",
   keywords: [
-    "pressure washing Peachtree City GA",
-    "pressure washing Sharpsburg GA",
-    "pressure washing Senoia GA",
-    "pressure washing Fayetteville GA",
-    "concrete cleaning Peachtree City GA",
-    "driveway pressure washing Peachtree City GA",
-    "sidewalk cleaning Fayette County GA",
-    "concrete pressure washing near Peachtree City",
-    "student-owned pressure washing Peachtree City",
+    "pressure washing Athens GA",
+    "pressure washing Oconee County GA",
+    "pressure washing Watkinsville GA",
+    "concrete cleaning Athens GA",
+    "driveway pressure washing Athens GA",
+    "sidewalk cleaning Athens GA",
+    "concrete pressure washing near Athens",
+    "student-owned pressure washing Athens",
   ],
   alternates: { canonical: "/" },
   icons: {
@@ -55,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${siteConfig.name} | Local Concrete Pressure Washing`,
     description:
-      "Professional concrete cleaning from local college students who grew up in the Peachtree City community.",
+      "Professional concrete cleaning from local college students serving the Athens community.",
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
@@ -73,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} | Local Concrete Pressure Washing`,
     description:
-      "Support local college students and refresh your concrete in Peachtree City, GA.",
+      "Support local college students and refresh your concrete in Athens, GA.",
     images: ["/images/gallery/driveway-before-after.jpg"],
   },
   robots: { index: true, follow: true },
@@ -84,7 +83,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: siteConfig.name,
   description:
-    "College-student-operated concrete pressure washing business serving Peachtree City and surrounding Georgia communities.",
+    "College-student-operated concrete pressure washing business serving Athens, Oconee County, Watkinsville, and surrounding Georgia communities.",
   telephone: siteConfig.phoneE164,
   url: siteConfig.url,
   image: `${siteConfig.url}/images/brand/starbros-logo-header.jpg`,
@@ -104,7 +103,7 @@ const localBusinessSchema = {
     },
   ],
   areaServed: siteConfig.serviceAreas.map((name) => ({
-    "@type": "City",
+    "@type": "Place",
     name: `${name}, Georgia`,
   })),
   knowsAbout: [
